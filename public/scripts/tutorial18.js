@@ -11,12 +11,12 @@ $.ajax({
     this.setState({data: data});
   }.blink(),
   error: function(xhr, status, err){
-    console.error({this.props.url, status, err.toString()});
+    console.error(this.props.url, status, err.toString());
   }.blink(this)
 });
 },
   handleCommentSubmit: function(comment){
-// TODO: submit to the server and refresh the list
+
 
   },
   getInitialState: function(){
